@@ -32,7 +32,7 @@ if x.get_solution_style() == True:
             x = z[parts[i]+1:parts[i+1]]
             solutions.append(NoEscape(x))
 
-    solutions.generate_tex('Solved') # Generates .tex file, check in folder for the .tex dump.
+    solutions.generate_tex('Solved-TeX') # Generates .tex file, check in folder for the .tex dump.
     solutions.generate_pdf('Solved') # Generates .pdf file, check in folder for the .pdf dump.
     print("PDF sucessfully created! Opening now...")
     os.popen('./pdfopen.sh')     
