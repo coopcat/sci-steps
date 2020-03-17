@@ -146,7 +146,7 @@ class ProjectileMotion:
                     solved = str(solved)
                     if ', ' in solved:
                         try:
-                            solved = eval(solved)  # Dangerous step, so make sure solved can never be inputting by a user.
+                            solved = eval(solved)
                             for t in range(len(solved)):
                                 if solved[t] >= 0:
                                     solved = str(solved[t])
@@ -173,7 +173,7 @@ class ProjectileMotion:
 
                             self.answer += str(r'\begin{equation*}' + self.unknown_vars[i] + " = " + sp.latex(sp.sympify(filler), mode='plain') + r'\end{equation*}') + ('@')
 
-                            solved_fill = self.model.seperate_equation_fill(filler) # Can use solved instead of filler but it provides less detailed answers
+                            solved_fill = self.model.seperate_equation_fill(filler)
                             # solved_fill = str(solved_fill)
                             solved_simplified = self.model.seperate_equation_simplify(solved_fill)
                             solved_evaluated = self.model.seperate_equation_evaluate(solved_fill)
@@ -187,7 +187,7 @@ class ProjectileMotion:
                             else:
                                 self.answer += r'\begin{equation*}' + " = " + sp.latex(solved_fill, mode='plain')
 
-                            solved_fill = self.model.seperate_equation_fill(filler) # Can use solved instead of filler but it provides less detailed answers
+                            solved_fill = self.model.seperate_equation_fill(filler)
                             # solved_fill = str(solved_fill)
                             solved_simplified = self.model.seperate_equation_simplify(solved_fill)
                             solved_evaluated = self.model.seperate_equation_evaluate(solved_fill)
