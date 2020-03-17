@@ -11,7 +11,7 @@ z = x.get_answer()
 question_type = x.get_question_type()
 
 def part_splitter(unparsed_text):
-    '''Creates a list of indices of the unparsed text where the '$' sign shows up.'''
+    '''Creates a list of indices of the unparsed text where the '@' sign shows up.'''
     master_list = []
     for i in range(len(unparsed_text)):
         if unparsed_text[i] == "@":
