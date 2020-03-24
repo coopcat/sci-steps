@@ -1,5 +1,5 @@
-# physics-solver
-a prototype application for solving basic physics problems.
+# sci-steps
+a prototype application for solving high school science problems.
 
 Requirements:
 
