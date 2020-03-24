@@ -103,7 +103,7 @@ class Problem(object):
         return self.vars_order
 
 def check_if_unique(equation, variables):
-    '''Global function that checks if an equaiton only consists of one variable. Returns True if unique, else returns False.'''
+    '''Global function that checks if an equation only consists of one variable. Returns True if unique, else returns False.'''
 
     counter = 0
     for i in range(len(variables)):
